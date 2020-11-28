@@ -850,6 +850,7 @@ a.perfomances:hover{
     background: url(./../img/bg-about-html.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right !important;
 }
 .about-me-html{
     background: #111113;
@@ -983,6 +984,7 @@ canvas.certificates-bg{
     background: url(./../img/bg-projects-html.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right !important;
 }
 .my-projects-html{
     background: url(./../img/bg-projects-cards.svg);
