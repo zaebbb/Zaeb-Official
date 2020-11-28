@@ -1,0 +1,408 @@
+/* container media */
+
+/* media 1300 */
+@media (max-width:1300px){
+    
+}
+
+
+
+/* media 1200 */
+@media (max-width:1200px){
+    .max-width{
+        margin: 0px 90px;
+    }
+    .profile .cards,
+    .nav{
+        right: 90px;
+        left: 90px;
+    }
+    .profile canvas,
+    .profile{
+        height: 110vh;
+    }
+}
+
+
+
+/* media 1100 */
+@media (max-width:1100px){
+    .max-width{
+        margin: 0px 80px;
+    }
+    .profile .cards,
+    .nav{
+        right: 80px;
+        left: 80px;
+    }
+    .projects .dark,
+    .projects{
+        height: 140vh;
+    }
+    .projects .devices{
+        padding-top: 0px;
+    }
+    .projects a{
+        margin-top: 5%;
+        width: auto;
+    }
+    .projects .devices{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .projects .devices .iphone{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        margin-top: 120px;
+    }
+    .projects .devices .iphone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .devices .mac img,
+    .projects .devices .macBook img{
+        width: 100%;
+    }
+    .projects .devices .iphone .imgBx{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects .devices .mac,
+    .projects .devices .macBook{
+        display: none;
+        opacity: 0;
+    }
+    .projects .devices .iphone:nth-child(4){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .devices{
+        justify-content: space-between;
+    }
+}
+
+
+
+/* media 1050 */
+@media (max-width:1050px){
+    .menu-btn{
+        opacity: 1;
+        z-index: 1000;
+    }
+    .menu-btn.active{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    .nav-ul{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ff184c;
+        top: -200%;
+        transition: 0.5s;
+    }
+    .nav-ul.active{
+        top: 0;
+    }
+    .nav-ul li{
+        margin: 30px;
+        margin-left: 0px !important;
+    }
+    .profile canvas,
+    .profile{
+        height: 100vh;
+    }
+}
+
+
+
+/* media 1000 */
+@media (max-width:1000px){
+    .max-width{
+        margin: 0px 70px;
+    }
+    .profile .cards,
+    .nav{
+        right: 70px;
+        left: 70px;
+    }
+    .about .about-content{
+        flex-direction: column-reverse;
+    }
+    .about-content .about-right{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .about-content .about-right img{
+        width: 40%;
+    }
+    .about-content .about-left{
+        width: 100%;
+        margin: auto;
+    }
+    .about{
+        height: 190vh;
+    }
+    .profile canvas,
+    .profile{
+        height: 160vh;
+    }
+    .profile .card-1,
+    .profile .card-2,
+    .profile .card-3{
+        width: 45%;
+        margin-top: 10px;
+    }
+    .contact .message .input-2{
+        flex-direction: column;
+    }
+    .contact .message .input-2 input{
+        width: 100% !important;
+    }
+}
+
+
+
+/* media 900 */
+@media (max-width:900px){
+    .max-width{
+        margin: 0px 60px;
+    }
+    .profile .cards,
+    .nav{
+        right: 60px;
+        left: 60px;
+    }
+    .contact .contact-info{
+        flex-direction: column;
+    }
+    .contact .touch,
+    .contact .message{
+        width: 100% !important;
+    }
+    .contact .touch .contact-info-span,
+    .contact .touch i{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer{
+        height: 44vh;
+    }
+    .footer .footer-content{
+        flex-direction: column;
+    }
+    .footer .footer-content .social-content{
+        width: 100%;
+    }
+    .footer .footer-content .copyright-content{
+        padding-top: 30px;
+    }
+}
+
+
+
+/* media 850 */
+@media (max-width:850px){
+    .profile canvas,
+    .profile{
+        height: 180vh;
+    }
+}
+
+
+
+/* media 800 */
+@media (max-width:800px){
+    .max-width{
+        margin: 0px 50px;
+    }
+    .profile .cards,
+    .nav{
+        right: 50px;
+        left: 50px;
+    }
+    .skills .cards{
+        width: 100%;
+        flex-direction: column;
+    }
+    .skills .cards .card-1,
+    .skills .cards .card-2{
+        width: 100% !important;
+    }
+    .skills .cards a{
+        display: inline-block;
+        top: 10% !important;
+    }
+    .cert img{
+        width: 100%;
+    }
+    .cards-projects-html{
+        flex-direction: column;
+    }
+    .cards-project{
+        width: 100%;
+    }
+}
+
+
+
+/* media 700 */
+@media (max-width:700px){
+    .max-width{
+        margin: 0px 40px;
+    }
+    .profile .cards,
+    .nav{
+        right: 40px;
+        left: 40px;
+    }
+    .fixed-menu-2{
+        right: -25%;
+    }
+    .fixed-menu-1.active{
+        right: -25%;
+    }
+    .profile .card-1,
+    .profile .card-2,
+    .profile .card-3{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .profile canvas,
+    .profile{
+        height: 200vh;
+    }
+    .cards-about{
+        flex-direction: column;
+    }
+    .education,
+    .training,
+    .projects-about,
+    .programs{
+    width: 100%;
+}
+}
+
+
+
+/* media 600 */
+@media (max-width:600px){
+    .max-width{
+        margin: 0px 30px;
+    }
+    .profile .cards,
+    .nav{
+        right: 30px;
+        left: 30px;
+    }
+    .about-content .about-right img{
+        width: 60%;
+    }
+    .about{
+        height: 210vh;
+    }
+    .profile canvas,
+    .profile{
+        height: 230vh;
+    }
+}
+
+
+
+/* media 550 */
+@media (max-width:550px){
+    .projects .dark,
+    .projects{
+        height: 230vh;
+    }
+}
+
+
+
+/* media 500 */
+@media (max-width:500px){
+    .max-width{
+        margin: 0px 20px;
+    }
+    .profile .cards,
+    .nav{
+        right: 20px;
+        left: 20px;
+    }
+    .home,
+    .home .dark{
+        height: 115vh;
+    }
+    .about-content .about-right img{
+        width: 100%;
+    }
+    .about{
+        height: 245vh;
+    }
+    .profile canvas,
+    .profile{
+        height: 250vh;
+    }
+    .touch h3,
+    .contact-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .footer{
+        height: 48vh;
+    }
+}
+
+/* media 485 */
+@media (max-width:485px){
+    .max-width{
+        margin: 0px 60px;
+    }
+    .nav{
+        right: 20px;
+        left: 20px;
+    }
+    .home,
+    .home .dark{
+        height: 120vh;
+    }
+}
+
+
+/* media 400 */
+@media (max-width:400px){
+    .max-width{
+        margin: 0px 10px;
+    }
+    .profile .cards,
+    .nav{
+        right: 10px;
+        left: 10px;
+    }
+    .home,
+    .home .dark{
+        height: 125vh;
+    }
+}
