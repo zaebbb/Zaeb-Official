@@ -227,7 +227,7 @@ a{
     background: url(./../img/home-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right !important;
     z-index: -5;
 }
 .dark{
