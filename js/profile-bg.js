@@ -1,5 +1,5 @@
 (function(){
-    let canvas = document.querySelector('canvas'),
+    let canvas = document.querySelector('.visible'),
     ctx = canvas.getContext('2d'),
     w = canvas.width = innerWidth,
     h = canvas.height = innerHeight,

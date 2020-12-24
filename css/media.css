@@ -159,7 +159,7 @@
         margin: auto;
     }
     .about{
-        height: 190vh;
+        height: 170vh;
     }
     .profile canvas,
     .profile{
@@ -298,8 +298,8 @@
     .training,
     .projects-about,
     .programs{
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 

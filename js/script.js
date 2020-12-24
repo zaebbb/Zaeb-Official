@@ -29,6 +29,11 @@ $(document).ready(function(){
         $('.nav-ul').toggleClass("active");
         $('.menu-btn').toggleClass("active");
     });
+    $('.nav-hover').click(function(){
+        $('.nav-ul').removeClass("active");
+        $('.menu-btn').removeClass("open");
+        $('.menu-btn').toggleClass("active");
+    });
 
     // button perfomances
     $('.fa-sliders-h').click(function(){

@@ -162,6 +162,7 @@ a{
     transition: all 0.5s;
     z-index: 10000;
 }
+.fixed-menu-3 a,
 .fixed-menu-1 i{
     font-size: 30px;
     background: #ff184c;
@@ -175,6 +176,7 @@ a{
     cursor: pointer;
     transition: all 0.5s;
 }
+.fixed-menu-3 a,
 .fixed-menu-2 i:hover,
 .fixed-menu-1 i:hover{
     background: #E41645;
@@ -221,6 +223,17 @@ a{
 
 
 
+/* container fixed menu-3 start */
+.fixed-menu-3{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* container fixed menu-3 end */
+
+
+
 /* container home start */
 .home{
     height: 100vh;
@@ -229,6 +242,8 @@ a{
     background-repeat: no-repeat;
     background-position: right !important;
     z-index: -5;
+    position: relative;
+    z-index: 1000;
 }
 .dark{
     height: 100vh;
@@ -265,6 +280,7 @@ a{
     float: left;
     margin-top: 20px;
     transition: all 0.5s;
+    z-index: 10000;
 }
 .home-content a:hover{
     background: #FF184C;
@@ -337,10 +353,12 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
     height: 130vh;
 }
 .projects .dark{
     height: 130vh;
+    min-height: 100vh;
 }
 .devices{
 	position: relative;
@@ -413,6 +431,7 @@ a{
     animation: animate-iphone 75s linear infinite;
     background: url(./../img/mobile-1.jpg);
     background-size: 100%;
+    padding-bottom: 20px;
 }
 .projects a{
     display: flex;
@@ -842,6 +861,22 @@ a.perfomances:hover{
 
 
 
+/* container 3D start */
+.scene{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+.scene canvas{
+    z-index: 1000;
+    position: absolute;
+}
+/* container 3D end */
+
+
+
 
 
 
@@ -997,6 +1032,7 @@ canvas.certificates-bg{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .my-projects-html h3{
     color: #ffffff;
@@ -1020,11 +1056,25 @@ canvas.certificates-bg{
     align-items: center;
     width: 45%;
     padding: 40px 0px;
+    overflow: hidden;
+    border-radius: 30px;
 }
 .cards-projects-html .cards-project img{
     object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.cards-projects-html .cards-project img:hover{
+    transform: scale(1.05);
+    width: 100%;
+    border-radius: 30px;
+}
+.cards-projects-html .cards-project img:active{
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 .cards-projects-html .cards-project a{
     margin-top: 20px;
